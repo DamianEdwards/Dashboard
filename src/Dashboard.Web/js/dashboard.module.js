@@ -1,6 +1,6 @@
-﻿(function () {
+﻿(function (angular) {
     "use strict";
 
-    var dashboard = angular.module("Dashboard", []);
+    angular.module("Dashboard", []);
     
-})();
+})(window.angular);

@@ -26,11 +26,13 @@
     <body ng-app="Dashboard">
 
         <div class="widget"
-             ng-controller="GitHubIssues"
-             ng-init=" init('signalr/signalr', 30) ">
+            ng-controller="GitHubIssues"
+            data-repository="signalr/signalr"
+            data-milestoneId="30">
 
-            {{ count }} issues remaining
+            {{ count }} <ng-pluralize count="count" when="{1 : 'issue', 'other' : 'issues'}"></ng-pluralize> remaining
 
         </div>
+
     </body>
 </html>
