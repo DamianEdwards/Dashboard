@@ -1,0 +1,36 @@
+﻿<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+    <head>
+        <meta charset="utf-8" />
+        <title>Dashboard</title>
+    
+        <link href="css/bootstrap.min.css" rel="stylesheet" />
+        <link href="css/bootstrap-theme.min.css" rel="stylesheet" />
+        <link href="css/dashboard.css" rel="stylesheet" />
+
+        <!--Lib JS-->
+        <script src="js/lib/angular/angular.min.js"></script>
+        <script src="js/lib/jquery-2.0.3.min.js"></script>
+        <script src="js/lib/bootstrap.min.js"></script>
+
+        <!-- CDN Links -->
+        <!--<script src="//code.angularjs.org/1.0.7/angular.min.js"></script>-->
+        <!--<script src="//ajax.googleapis.com/ajax/libs/jquery/2.0.3/jquery.min.js"></script>-->
+        <!--<script src="//netdna.bootstrapcdn.com/bootstrap/3.0.0/js/bootstrap.min.js"></script>-->
+    
+        <!-- Application JS -->
+        <script src="js/Dashboard.module.js"></script>
+        <script src="js/GitHub.service.js"></script>
+        <script src="js/GitHubIssues.controller.js"></script>
+    </head>
+    <body ng-app="Dashboard">
+
+        <div class="widget"
+             ng-controller="GitHubIssues"
+             ng-init=" init('signalr/signalr', 30) ">
+
+            {{ count }} issues remaining
+
+        </div>
+    </body>
+</html>
