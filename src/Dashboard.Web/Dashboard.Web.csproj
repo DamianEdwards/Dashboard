@@ -59,6 +59,7 @@
   <ItemGroup>
     <Content Include="js\GitHub.service.js" />
     <Content Include="js\GitHubIssues.controller.js" />
+    <Content Include="js\UriBuilder.service.js" />
     <Content Include="packages.config" />
     <None Include="js\lib\jquery-2.0.3.intellisense.js" />
     <Content Include="js\lib\jquery-2.0.3.js" />

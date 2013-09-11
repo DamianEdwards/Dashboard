@@ -22,6 +22,7 @@
         <script src="js/Dashboard.module.js"></script>
         <script src="js/GitHub.service.js"></script>
         <script src="js/GitHubIssues.controller.js"></script>
+        <script src="js/UriBuilder.service.js"></script>
     </head>
     <body ng-app="Dashboard">
 
@@ -30,7 +31,7 @@
             data-repository="signalr/signalr"
             data-milestoneId="30">
 
-            {{ count }} <ng-pluralize count="count" when="{1 : 'issue', 'other' : 'issues'}"></ng-pluralize> remaining
+            {{ count }} <ng-pluralize count="count" when="{ 1 : 'issue', 'other' : 'issues' }"></ng-pluralize> remaining
 
         </div>
 

@@ -22,7 +22,7 @@
             });
     }
 
-    var dashboard = angular.module("Dashboard");
-    dashboard.controller("GitHubIssues", GitHubIssuesController);
+    angular.module("Dashboard")
+        .controller("GitHubIssues", GitHubIssuesController);
 
 })(window.angular);
